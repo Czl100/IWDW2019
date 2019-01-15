@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CBD2016</title>
+</head>
+<body>
+<link rel="stylesheet" href="css/style.css" type="text/css"/>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="js/jquery.Xslider.js"></script>
+<script type="text/javascript">
+ddsmoothmenu.init({
+
+	mainmenuid: "smoothmenu1", //menu DIV id
+	
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	
+	classname: 'nav'
+
+});
+$(document).ready(function(){
+	// 焦点图片淡隐淡现
+	$(".slider").Xslider({
+		affect:'fade',
+		ctag: 'div'
+	});
+});
+</script>
+
+<div class="navbox">
+	<div class="nav" id="smoothmenu1">
+		<ul class="clearfix">
+			<li><a href="index.html"><span>Home</span></a></li>
+			<li>
+				<a  href="#"><span>Program</span></a>
+				<ul class="submenu">
+					<li><a  href="keynote.html">Keynote speakers</a></li>
+					<li><a href="program.html">Program</a></li>
+				</ul>
+			</li>
+			<li>
+				<a  href="#"><span>CFP</span></a>	
+				<ul class="submenu">
+					<li><a href="callPaper.html">Call for papers</a></li>
+					<li><a  class="selected" href="submission.html">Submission of papers</a></li>
+                    <li><a href="paperRe.html">Paper Review</a></li>
+				</ul>
+			</li>
+			<li>
+				<a  href="Committee.html"><span>Committees</span></a>	
+			</li>
+			<li>
+				<a  href="#"><span>Location</span></a>
+				<ul class="submenu">
+					<li><a href="venueIn.html">Venue Information</a></li>
+					<li><a href="accormado.html">Accommodation</a></li>
+					<li><a href="transpor.html">Transportation</a></li>
+                    <li><a href="sight.html">Sightseeing</a></li>
+				</ul>
+			</li>
+			<li>
+				<a  href="regist.html"><span>Registration</span></a>	
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="body-wrapper">
+	<div class="theme-title">
+    	<div class="logo">
+        	<img src="images/logo.png" />
+        </div>
+    	<div class="slider">
+        	<div class="conbox">
+            	<div><img src="images/4ffecc68cb780d1801f19db52d38cabd.jpg" /></div>
+            	<div><img src="images/9fae30738c94fb8e47dd2ba3e6003290.jpg" /></div>
+            	<div><img src="images/44b91d75de385dc1a70fe56600f41e52.jpg" /></div>
+            	<div><img src="images/85dc407af2b2f7bfbbcb025a0ee0d66e.jpg" /></div>
+			</div>
+			<div class="switcher">
+				<a href="#" class="cur">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+			</div>
+        </div>
+    </div>
+    <div class="content">
+    	<h1>Paper Submission </h1>
+        <hr width="100%" noshade id="line"/>
+        <h2><strong>Under Construction . . . </strong></h2>
+        <hr width="100%" noshade id="line-gray"/>
+    </div>
+</div>
+<div id="bottom">
+	<hr width="100%" noshade id="line-gray"/>
+    <div id="sponsor">
+    	<table>
+        	<tr>
+            	<td width="12%"><img src="images/scu.png" /></td>
+                <td width="12%"><img src="images/hkpu.png" /></td>
+               <!---  <td width="14%"><img src="images/sponsor_clip_image002.jpg" /></td>
+                <td width="14%"><img src="images/sponsor_clip_image002_0000.jpg" /></td>m -->
+                <td width="14%"><img src="images/IEEElogo.GIF" /></td>
+                <td width="16%"><img src="images/nnsfc.png" /></td>
+                <td width="16%"><img src="images/ccf.png" /></td>
+            </tr>
+        </table>
+    </div>
+<div class="aright">Copyright 2015~2016 International Conference on Advanced Cloud and Big Data. All Rights Reserved.</div></div>
+</body>
+</html>
