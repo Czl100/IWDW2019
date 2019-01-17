@@ -1,49 +1,50 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CBD2016</title>
-</head>
-<body>
-<link    rel="stylesheet" href="css/style.css" type="text/css"/>
-<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
-<script type="text/javascript" src="js/jquery.Xslider.js"></script>
-<script type="text/javascript">
-	ddsmoothmenu.init({
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>IWDW2019</title>
 
-		mainmenuid: "smoothmenu1", //menu DIV id
-		
-		orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
-		
-		classname: 'nav'
+	<link    rel="stylesheet" href="css/style.css" type="text/css"/>
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+	<script type="text/javascript" src="js/jquery.Xslider.js"></script>
 
-	});
-	$(document).ready(function(){
-		// 焦点图片淡隐淡现
-		$(".slider").Xslider({
-			affect:'fade',
-			ctag: 'div'
+	<script src="js/iwdw_2019.js"></script>
+	<script type="text/javascript">
+		ddsmoothmenu.init({
+			mainmenuid: "smoothmenu1", //menu DIV id		
+			orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"			
+			classname: 'nav'
 		});
-		$(".button").click(function(){
-			$("#site_nav").fadeOut("slow");
-	});
-	});
-</script>
+		
+		$(document).ready(function(){
+			// 焦点图片淡隐淡现
+			$(".slider").Xslider({
+				affect:'fade',
+				ctag: 'div'
+			});
+			$(".button").click(function(){
+				$("#site_nav").fadeOut("slow");
 
-<!--导航栏-->>
+			});			
+		});
+	</script>
+</head>
+
+<body id='home'>
+<!--导航栏-->
 <div class="navbox">
 	<div class="nav" id="smoothmenu1">
 		<ul class="clearfix">
-			<li><a  class="selected"  href="index.html"><span>Home</span></a></li>
-			<li>
+			<li class="selected home"><a href="index.html"><span>Home</span></a></li>
+			<li class="program">
 				<a  href="#"><span>Program</span></a>
 				<ul class="submenu">
 					<li><a href="keynote.html">Keynote speakers</a></li>
 					<li><a href="program.html">Program</a></li>
 				</ul>
 			</li>
-			<li>
+			<li class="cfp">
 				<a  href="#"><span>CFP</span></a>	
 				<ul class="submenu">
 					<li><a href="callPaper.html">Call for papers</a></li>
@@ -51,10 +52,10 @@
                     <li><a href="paperRe.html">Paper Review</a></li>
 				</ul>
 			</li>
-			<li>
+			<li class="committees">
 				<a  href="Committee.html"><span>Committees</span></a>	
 			</li>
-			<li>
+			<li class="location">
 				<a  href="#"><span>Location</span></a>
 				<ul class="submenu">
 					<li><a href="venueIn.html">Venue Information</a></li>
@@ -63,22 +64,22 @@
                     <li><a href="sight.html">Sightseeing</a></li>
 				</ul>
 			</li>
-			<li>
+			<li class="registration">
 				<a  href="regist.html"><span>Registration</span></a>	
 			</li>
 		</ul>
 	</div>
 </div>
 
-<div class="body-wrapper">
+<div class="body-wrapper">	
 	<!--图像集-->
 	<div class="theme-title">
     	<div class="logo">
-        	<img src="images/logo.png" />
+        	<a href="index.html"><img src="images/logo.png" /></a>
         </div>
     	<div class="slider">
         	<div class="conbox">
-            	<div><img src="images/4ffecc68cb780d1801f19db52d38cabd.jpg" /></div>
+            	<div><img src="images/4ffecc68cb780d1801f19db52d38cabd.jpg"/></div>
             	<div><img src="images/9fae30738c94fb8e47dd2ba3e6003290.jpg" /></div>
             	<div><img src="images/44b91d75de385dc1a70fe56600f41e52.jpg" /></div>
             	<div><img src="images/85dc407af2b2f7bfbbcb025a0ee0d66e.jpg" /></div>
@@ -92,9 +93,10 @@
         </div>
 	</div>
 	
+	<!--正文-->
     <div class="content-home">
 		<div class="textbox"> 
-			<h2>News</h2>
+			<h2>New</h2>
 			<hr width="100%" noshade id="line"/>
 			<div class="text">
 				<p>The first CFP was launched on Dec. 10, 2015. </p>
@@ -103,20 +105,45 @@
 		</div>
 
 		<div class="textbox">
-			<h2>Introduction to CBD</h2>
+			<h2>Introduction</h2>
 			<hr width="100%" noshade id="line"/>
 			<div class="text">
-				<p>The International Conference on Advanced Cloud and Big Data (CBD) is a prestigious forum for researchers, 
-					practitioners, developers and users who are interested in cloud computing and big data to explore new ideas,
-					 techniques and tools, as well as to exchange experience. Besides the latest research achievements,
-					  this conference also covers innovative commercial data management systems, innovative commercial applications of cloud computing and big data technology, and experience in applying recent research advances to real-world problems. 
-					  We solicit original papers on a wide range of cloud computing and big data topics. </p>
+				<p>The 18th IWDW 2018 will be held Oct. 22 - 24, 2018 in Chengdu, Chain. For over a decade, 
+					IWDW has been a premier event for researchers and practitioners working on digital watermarking and forensic for multimedia security. </p>
+				</hr><p>We invite submissions of high-quality original research papers.</p>
 			</div>
 		</div>
 	
 		<div class="textbox">
-			<h2>Contact Information</h2>
+			<h2>Areas of Interest</h2>
+			<hr width="100%" noshade id="line"/>
 			<div class="text">
+				<b><p>The topics include, but not limited to</p></b>
+				<ul style="padding-left:3em">
+					<li>Authentication, Copyright protection, DRM, and forensic watermarking</li>
+					<li>Channel coding techniques for watermarking</li>
+					<li>Convolutional neural networks (CNN) and deep learning</li>					
+					<li>Combination of data hiding and cryptography</li>
+					<li>Digital image and media forensics and anti-forensics</li>
+					<li>Document Security</li>
+					<li>Information theoretic, stochastic and capacity aspects of data hiding</li>
+					<li>Large-scale experimental tests and benchmarking</li>
+					<li>Media forensics use-cases, methodologies and tools</li>
+					<li>Statistical and perceptual models of multimedia content</li>
+					<li>Reversible data hiding</li>
+					<li>Robust perceptual hashing</li>
+					<li>Security issues, including attacks and counter-attacks</li>
+					<li>Steganography and steganalysis</li>
+					<li>Source identification</li>
+					<li>Visual cryptography and secret image sharing</li>
+					<li>...</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="textbox">
+			<h2>Contact Information</h2>			
+			<div class="text">		
 				<table>
 					<tr>
 						<td width="25%"><h3>Secretariats:</h3></td>
@@ -135,20 +162,20 @@
 						<td><p> Wang:   +86 189 7734 6953</p><p>Cao: +86 182 0281 0521</p><P>Huang: +86 177 8066 1974</P></td>
 					</tr>
 				</table>
+				<tbody>
 			</div>
 		</div>
     </div>
 </div>
 
+<!--
 <div id="bottom">
 	<hr width="100%" noshade id="line-gray"/>
     <div id="sponsor">
     	<table>
         	<tr>
             	<td width="12%"><img src="images/scu.png" /></td>
-                <td width="12%"><img src="images/hkpu.png" /></td>
-               <!---  <td width="14%"><img src="images/sponsor_clip_image002.jpg" /></td>
-                <td width="14%"><img src="images/sponsor_clip_image002_0000.jpg" /></td>m -->
+                <td width="12%"><img src="images/hkpu.png" /></td>               
                 <td width="14%"><img src="images/IEEElogo.GIF" /></td>
                 <td width="16%"><img src="images/nnsfc.png" /></td>
                 <td width="16%"><img src="images/ccf.png" /></td>
@@ -157,8 +184,12 @@
     </div>
 	<div class="aright">Copyright 2015~2016 International Conference on Advanced Cloud and Big Data. All Rights Reserved.</div>
 </div>
+-->
+<footer class="footer">
+	<p>Copyright(c) IWDW 2019 Conference committees. All rights reserved.</p>
+</footer>
 
-<!---浮动窗口-->>
+<!---浮动窗口-->
 <div id="site_nav">
 	 <button type="button" class="button">Close</button>
      <hr width="100%" noshade id="line"/>
