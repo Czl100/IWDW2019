@@ -1,25 +1,51 @@
-body {
+html,body {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	position: relative;	
+	
 	font-family: Tahoma,Geneva,sans-serif;
-	font-size: 14px;
-	/*font:12px/180% Arial,Lucida,Verdana,"宋体",Helvetica,sans-serif;*/
+	font-size: 14px;	
 	color:#333;
 	background: #fff;
-	/*新增*/
-	position: relative;
-	margin: 0;
-	min-height: 100%;
 	display: block;
 }
 
+#main{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto 17px;
+}
+h1{
+	font-size: 21px;
+}
 .body-wrapper{
 	width:960px; 
 	height:auto; 
 	margin:auto;
 }
 
-*{
-	margin: 0px;
-	padding:0;
+.text{
+	line-height:2em;
+	word-break: keep-all;
+	padding-left: 2em;
+}
+
+/*首行缩进*/
+.indentation {
+	padding-left: 0em;
+	text-indent: 2em;
+}
+/*文本环绕*/
+.float img, .float_left{
+	float: left;
+}
+.float_right {
+	float: right;
 }
 
 .content-home h1 h2{
@@ -30,11 +56,6 @@ body {
 	margin-top: 2em;
 }
 
-.text{
-	line-height:2em;
-	word-break: keep-all;
-	padding-left: 2em;
-}
 
 .text table {
 	border: 1px solid #8A8A8A;
@@ -45,13 +66,19 @@ table{
 	margin-top: 1em;
 
 }
+
+table p, table h3 {
+	margin-top: 0%;
+	margin-bottom: 0%
+}
+
 .content img{
 	float:left; 
 	width:145px;
 }
 .content table h3{
 	font-weight:bolder;
-	font-size:20px;
+	font-size:1.5em;
 }
 .content object{
 	margin:10px 15px;
@@ -71,7 +98,7 @@ a:hover{
 
 /* navbox */
 .navbox,.nav li,.nav li.current a,.nav li.selected a span,.nav li a.selected,.nav li a.selected span{
-	background: #1743c6;
+	background: #005784;
 }
 .navbox{
 	height:49px;
@@ -121,7 +148,7 @@ a:hover{
 }
 .nav li.selected a span,.nav li a.selected span,.nav li a span:hover{
 	background-position:100% -60px;
-	background-color:#006DA2 ;
+	background-color: #4617c6c2;
 }
 .nav li.selected .submenu{
 	display:block;
@@ -176,11 +203,14 @@ a:hover{
 
 
 .body-wrapper *{
-	background-color: #FBFBFB;
+	background-color: #fbfbfb;
 }
+
 .theme-title{
+	margin-bottom: 2em;
 	width:960px;
-	height:300px;
+	height:300px;	
+	cursor: pointer;
 }
 .theme-title .logo{
 	width:640px; 
@@ -244,8 +274,7 @@ h2 strong{
 	
 
 h3 strong{
-	font-size:18px;
-	margin-left:10px; 
+	font-size:18px;	
 	color:#006DA2;
 }	
  
@@ -281,8 +310,11 @@ h3 strong{
 }
 
 footer{
+	width: 100%;
+	height: 15px;
+	position: absolute;
 	margin-top:25px;
-	padding:25px 0 25px 0;
+	padding:15px 0 27px 0;
 	background: #BCBCBC;
 	color:#666;
 	text-align: center;
@@ -312,7 +344,7 @@ table td{
 }
 
 .blue{
-	color:#0AA;
+	color:#004aaa;
 }
 	
 #accormado-img img{

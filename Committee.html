@@ -1,211 +1,49 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>IWDW2019</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>IWDW2019</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+    <script type="text/javascript" src="js/jquery.Xslider.js"></script>
+    
+    <script src="js/iwdw_2019.js"></script>
+    <script type="text/javascript">
+        ddsmoothmenu.init({
+
+            mainmenuid: "smoothmenu1", //menu DIV id
+            
+            orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+            
+            classname: 'nav'
+
+        });
+        $(document).ready(function(){
+            // 焦点图片淡隐淡现
+            $(".slider").Xslider({
+                affect:'fade',
+                ctag: 'div'
+            });
+        });
+    </script>
 </head>
-<body>
-<link rel="stylesheet" href="css/style.css" type="text/css"/>
-<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
-<script type="text/javascript" src="js/jquery.Xslider.js"></script>
-<script type="text/javascript">
-ddsmoothmenu.init({
+<body id="committees">
 
-	mainmenuid: "smoothmenu1", //menu DIV id
-	
-	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
-	
-	classname: 'nav'
+    <div class="navbox"></div>
 
-});
-$(document).ready(function(){
-	// 焦点图片淡隐淡现
-	$(".slider").Xslider({
-		affect:'fade',
-		ctag: 'div'
-	});
-});
-</script>
-
-<div class="navbox">
-	<div class="nav" id="smoothmenu1">
-		<ul class="clearfix">
-			<li><a href="index.html"><span>Home</span></a></li>
-			<li>
-				<a  href="#"><span>Program</span></a>
-				<ul class="submenu">
-					<li><a  href="keynote.html">Keynote speakers</a></li>
-					<li><a href="program.html">Program</a></li>
-				</ul>
-			</li>
-			<li>
-				<a  href="#"><span>CFP</span></a>	
-				<ul class="submenu">
-					<li><a href="callPaper.html">Call for papers</a></li>
-					<li><a href="submission.html">Submission of papers</a></li>
-                    <li><a href="paperRe.html">Paper Review</a></li>
-				</ul>
-			</li>
-			<li>
-				<a  class="selected" href="Committee.html"><span>Committees</span></a>	
-			</li>
-			<li>
-				<a  href="#"><span>Location</span></a>
-				<ul class="submenu">
-					<li><a href="venueIn.html">Venue Information</a></li>
-					<li><a href="accormado.html">Accommodation</a></li>
-					<li><a href="transpor.html">Transportation</a></li>
-                    <li><a href="sight.html">Sightseeing</a></li>
-				</ul>
-			</li>
-			<li>
-				<a  href="regist.html"><span>Registration</span></a>	
-			</li>
-		</ul>
-	</div>
-</div>
-<div class="body-wrapper">
-	<div class="theme-title">
-    	<div class="logo">
-        	<img src="images/logo.png" />
-        </div>
-    	<div class="slider">
-        	<div class="conbox">
-            	<div><img src="images/4ffecc68cb780d1801f19db52d38cabd.jpg" /></div>
-            	<div><img src="images/9fae30738c94fb8e47dd2ba3e6003290.jpg" /></div>
-            	<div><img src="images/44b91d75de385dc1a70fe56600f41e52.jpg" /></div>
-            	<div><img src="images/85dc407af2b2f7bfbbcb025a0ee0d66e.jpg" /></div>
-			</div>
-			<div class="switcher">
-				<a href="#" class="cur">1</a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<a href="#">4</a>
-			</div>
+    <div class="body-wrapper">
+        <div class="theme-title"></div>           
+        
+        <div class="content-home">
+            <div class="textbox">
+                <h2>Stay tuned...</h2>
+                <hr width="100%" noshade id="line"/>
+                <div class="text"></div>
+            </div>
         </div>
     </div>
-    <div class="content">
-    	<h1>Committees </h1>
-        <hr width="100%" noshade id="line"/>
-        <h2>Keynote speakers</h2>
-        <p>Qiang Yang, Hong Kong University of Science and Technology, Hongkong</p>
-        <p>Hui Lei, IBM USA</p>
-		<h2>General chairs </h2>
-        <p>Sun-Yuan Kung, Princeton University, USA</p>
-        <p>Bing Guo, Sichuan University., China</p>
-        <h2>Steering Committee </h2>
-        <p>Junzhou Luo (Chair), Southeast University, China</p>
-        <p>Laurence T. Yang, St. Francis Xavier University, Canada</p>
-        <p>Yi Pan, Georgia State University, USA</p>
-        <h2>Advisory Committee</h2>
-        <p>Yi Zhang (Chair), Sichuan University, China</p>
-        <p>Minyi Guo, Shanghai Jiaotong University, China</p>
-        <p>Hai Jin, Huazhong University of Science & Technology, China</p>
-        <h2>Program Chairs</h2>
-        <p>Qiang He, Swinburne University of Technology, Australia</p>
-        <p>Guohui Li, Huazhong Universityof Science & Technology. ,China</p>
-        <h2>Publicity Chairs</h2>
-        <p>Prof. Chuan Li, Sichuan University, China</p>
-        <p>Dr Jihe Wang, Hong Kong Polytechnic University, Hong Kong</p>
-        <p>Dr. Jingwei Li, Sichuan University, China</p>
-        <h2>Publication Chairs</h2>   
-        <p>Prof. Fang Dong, Southeast University, China</p>
-        <h2>Secretariats</h2>
-       	<p>Yuncheng Shen, Sichuan University, China</p>
-        <p>Yabo Cao, Sichuan University, China</p>
-        <p>Yichun Cao, Sichuan University, China</p>
-        <h2>Program Committee Members</h2>
-        <p>Guangwei Bai, Nanjing Tech University, China</p>
-        <p>Han-Chieh Chao, National Illan University, Taiwan</p>
-        <p>Kuo-Ming Chao, Coventry University, UK</p>
-        <p>WenGuang Chen, Tsinghua University, China</p>
-        <p>Yixin Chen, Washington University in St Louis, USA</p>
-        <p>Xiaoliang Fan, Lanzhou University, China</p>
-       <p> Xiang Fei, Coventry University, UK</p>
-       <p> Xinwen Fu, University of Massachusetts Lowell, USA</p>
-        <p>Zhangjie Fu, Nanjing University of Information Science and Technology, China</p>
-      <p>  Songtao Guo, Southwest University, China</p>
-      <p>  Zhigeng Han, Nanjing Audit University, China</p>
-      <p>  Jieyue He, Southeast University, China</p>
-     <p>   Hao Hu, Nanjing University, China</p>
-     <p>   Byeungwoo Jeon, Sungkyunkwan University, Korea</p>
-     <p>   Hai Jiang, Arkansas State University, USA</p>
-      <p>  Qun Jin, Waseda University, Japan</p>
-      <p>  Joneg-Uk Kim, Sangmyung University, Korea</p>
-       <p> Chinfeng Lai, National Chung Cheng University, Taiwan</p>
-       <p> Sungyoung Lee, Kyunghee University, Korea</p>
-       <p> Jin Li, Guangzhou University, China</p>
-       <p> Fangming Liu, Huangzhong University of Science and Technology, China</p>
-       <p> Jin Liu, Wuhan University, China</p>
-        <p>Jin Liu, Shanghai Maritime University, China</p>
-        <p>Xiao Liu, East China Normal University, China</p>
-       <p> Xiaofan Liu, Southeast University, China</p>
-      <p>  Shuai Ma, Beihang University, China</p>
-       <p> Thomas Rauber, University of Bayreuth, Germany</p>
-      <p>  Hang Shen, Nanjing Tech University, China</p>
-       <p> Jian Shen, Nanjing University of Information Science and Technology, China </p>
-       <p> Jun Shen, University of Wollongong, Australia</p>
-       <p> Aibo Song, Southeast University, China</p>
-      <p>  Peter Strazdins, Australian National University, Australia</p>
-       <p> Domenico Talia, Università della Calabria, Italy</p>
-      <p>  Fei Teng, Southwest Jiaotong University, China</p>
-      <p>  Fung Po Tso，Liverpool John Moores University，UK</p>
-      <p>  Genoveva Vargas, Grenoble INP, France</p>
-       <p> Jin Wang, Yangzhou University, China</p>
-       <p> Di Wu, Sun Yat-sen University, China</p>
-      <p>  Zhiang Wu, Nanjing University of Finance and Economics, China</p>
-      <p>  Zhebin Wu, Nanjing University of Science and Technology, China</p>
-      <p>  Feng Xia, Dalian University of Technology, China</p>
-      <p>  Fu Xiao, Nanjing University of Posts and Telecommunications, China</p>
-      <p>  Darren Xu, Transaction Network Services, USA</p>
-      <p>  Mingfu Xue, Nanjing University of Aeronautics and Astronautics, China</p>
-       <p> Panlong Yang, PLA University of Science and Technology, China</p>
-       <p> Jianming Yong, University of Southern Queensland, Australia</p>
-       <p> Shui Yu, Deakin University, Australia</p>
-       <p> Dong Yuan, The University of Sydney，Australia</p>
-       <p> Ting Yun, Nanjing Forestry University, China</p>
-       <p> Gaofeng Zhang, Swinburne University of Technology, Australia</p>
-      <p>  Gongxuan Zhang, Nanjing University of Science and Technology, China</p>
-      <p>  Hui Zhang, Nanjing University of Information Science and Technology, China</p>
-       <p> Liang Zhang, Fudan University, China</p>
-      <p>  Xuyun Zhang, University of Technology, Sydney, Australia</p>
-        <p>Bin Zhao, Nanjing Normal University, China</p>
-       <p> Lei Zhao, Jiangsu Normal University, China</p>
-       <p> Chunhou Zheng, Anhui Unviersity, China</p>
-       <p> Wei Zheng, Xiamen University, China</p>
-       <p> Yuhui Zheng, Sungkyunkwan University, Korea</p>
-       <p> Shijie Zhou, University of Electronic Science and Technology of China, China</p>
-       <p> Haibin Zhu, Nipissing University, Canada</p>
-      <p>  Renfa Li, Hunan University, China</p>
-        <p>Quan Wang, Xidian University, China</p>
-       <p> Yixiang Chen, East China Normal University, China</p>
-       <p> Junfeng Wang, Sichuan University, China</p>
-       <p> Jian Peng, Sichuan University, China</p>
-      <p>  Mei Hong, Sichuan University, China</p>
-     <p>   Min Zhu, Sichuan University, China</p>
-        <p>Liangyin Chen, Sichuan University, China</p>
-       <p> Yuansheng Wu, Southwest Jiaootng Universitym China</p>
-       <p> Lintao Duan, Chengdu University, China</p>
-        <hr width="100%" noshade id="line-gray"/>
-    </div>
-</div>
-<div id="bottom">
-	<hr width="100%" noshade id="line-gray"/>
-    <div id="sponsor">
-    	<table>
-        	<tr>
-            	<td width="12%"><img src="images/scu.png" /></td>
-                <td width="12%"><img src="images/hkpu.png" /></td>
-                <!---  <td width="14%"><img src="images/sponsor_clip_image002.jpg" /></td>
-                <td width="14%"><img src="images/sponsor_clip_image002_0000.jpg" /></td>m -->
-                <td width="14%"><img src="images/IEEElogo.GIF" /></td>
-                <td width="16%"><img src="images/nnsfc.png" /></td>
-                <td width="16%"><img src="images/ccf.png" /></td>
-            </tr>
-        </table>
-    </div>
-	<div class="aright">Copyright 2015~2016 International Conference on Advanced Cloud and Big Data. All Rights Reserved.</div>
-</div>
+
+    
 </body>
 </html>
