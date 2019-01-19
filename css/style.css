@@ -14,6 +14,11 @@ html,body {
 	display: block;
 }
 
+*{
+	margin-bottom: 0px;
+	margin-top:0px;
+
+}
 #main{
 	min-height: 100%;
 	height: auto !important;
@@ -87,9 +92,7 @@ table p, table h3 {
 a,img{
 	border:0;
 }
-a,a:visited{ 
-	text-decoration:none;
-}
+
 
 a:hover{
 	text-decoration:none;
@@ -97,8 +100,12 @@ a:hover{
 
 
 /* navbox */
-.navbox,.nav li,.nav li.current a,.nav li.selected a span,.nav li a.selected,.nav li a.selected span{
-	background: #005784;
+.navbox,
+.nav li.current a,
+.nav li.selected a span,
+.nav li a.selected,
+.nav li a.selected span{
+	background: #0032c1a1;
 }
 .navbox{
 	height:49px;
@@ -142,13 +149,16 @@ a:hover{
 	width:119px;
 	text-align:center;
 }
-.nav li.selected a,.nav li a.selected{
+.nav li.selected a,
+.nav li a.selected{
 	background-position:0 -60px;
 	text-decoration:none;
 }
-.nav li.selected a span,.nav li a.selected span,.nav li a span:hover{
+.nav li.selected a span,
+.nav li a.selected span,
+.nav li a span:hover{
 	background-position:100% -60px;
-	background-color: #4617c6c2;
+	background-color: #0032c1a1;
 }
 .nav li.selected .submenu{
 	display:block;
@@ -452,4 +462,8 @@ table td{
 
 .knote  { 
 	font-size:12px;
+}
+
+a {
+	color:blue;
 }
