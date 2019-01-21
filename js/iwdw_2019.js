@@ -3,19 +3,19 @@ $(document).ready(function(){
     var navbox='<div class="nav" id="smoothmenu1">\
             <ul class="clearfix">\
                 <li class="selected home"><a href="index.html"><span>Home</span></a></li>\
-                <li class="program">\
-                    <a  href="#"><span>Program</span></a>\
-                    <ul class="submenu">\
-                        <li><a href="keynote.html">Keynote speakers</a></li>\
-                        <li><a href="program.html">Program</a></li>\
-                    </ul>\
-                </li>\
                 <li class="cfp">\
                     <a  href="#"><span>CFP</span></a>\
                     <ul class="submenu">\
                         <li><a href="callPaper.html">Call for papers</a></li>\
                         <li><a href="submission.html">Submission of papers</a></li>\
                         <li><a href="paperRe.html">Paper Review</a></li>\
+                    </ul>\
+                </li>\
+                <li class="program">\
+                    <a  href="#"><span>Program</span></a>\
+                    <ul class="submenu">\
+                        <li><a href="keynote.html">Keynote speakers</a></li>\
+                        <li><a href="program.html">Program</a></li>\
                     </ul>\
                 </li>\
                 <li class="committees">\
@@ -44,14 +44,12 @@ $(document).ready(function(){
             <div class="conbox">\
                 <div><img src="images/1.jpg"/></div>\
                 <div><img src="images/2.jpg" /></div>\
-                <div><img src="images/3.jpg" /></div>\
-                <div><img src="images/xm1.jpg" /></div>\
+                <div><img src="images/xm.jpg" /></div>\
             </div>\
             <div class="switcher">\
                 <a href="#" class="cur">1</a>\
                 <a href="#">2</a>\
                 <a href="#">3</a>\
-                <a href="#">4</a>\
             </div>\
         </div>';
 
