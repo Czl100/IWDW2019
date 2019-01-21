@@ -38,14 +38,14 @@ $(document).ready(function(){
 
     //<!--图像集-->    
     var theme_title='<div class="logo">\
-            <a href="index.html"><img src="images/logo.png" /></a>\
+            <a href="index.html"><img src="images/qcs.jpg" /></a>\
         </div>\
         <div class="slider">\
             <div class="conbox">\
-                <div><img src="images/4ffecc68cb780d1801f19db52d38cabd.jpg"/></div>\
-                <div><img src="images/9fae30738c94fb8e47dd2ba3e6003290.jpg" /></div>\
-                <div><img src="images/44b91d75de385dc1a70fe56600f41e52.jpg" /></div>\
-                <div><img src="images/85dc407af2b2f7bfbbcb025a0ee0d66e.jpg" /></div>\
+                <div><img src="images/1.jpg"/></div>\
+                <div><img src="images/2.jpg" /></div>\
+                <div><img src="images/3.jpg" /></div>\
+                <div><img src="images/xm1.jpg" /></div>\
             </div>\
             <div class="switcher">\
                 <a href="#" class="cur">1</a>\
@@ -54,9 +54,23 @@ $(document).ready(function(){
                 <a href="#">4</a>\
             </div>\
         </div>';
+
+    var sponsors='<div id="bottom">\
+        <hr width="100%" noshade id="line-gray"/>\
+        <div id="sponsor">\
+            <table><tbody>\
+                <tr>\
+                    <td><a href="https://www.springer.com/gp"><img src="images/springer.png"/></a></td>\
+                    <td><a href="http://www.scu.edu.cn/"><img src="images/scu.png" /></a></td>\
+                </tr>\
+            </tbody></table>\
+        </div>\
+        </div>';        
+
     var footer='<p>Copyright(c) IWDW 2019 Conference committees. All rights reserved.</p>';
     $('.navbox').html(navbox);
     $('.theme-title').html(theme_title);
+    $('.sponsors').html(sponsors);
     $('footer').html(footer);
 
 
