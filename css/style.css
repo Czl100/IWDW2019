@@ -111,7 +111,7 @@ a:hover{
 .nav li.selected a span,
 .nav li a.selected,
 .nav li a.selected span{
-	background: #0032c1a1;
+	background: #6483d8;
 }
 .navbox{
 	height:49px;
@@ -164,7 +164,7 @@ a:hover{
 .nav li a.selected span,
 .nav li a span:hover{
 	background-position:100% -60px;
-	background-color: #0032c1a1;
+	background-color: #2828ab;
 }
 .nav li.selected .submenu{
 	display:block;
@@ -302,8 +302,8 @@ h3 strong{
 	height:3px;
 	width:100%;
 	border-width:0;
-	color: #0032c1;
-	background-color: #0034c1bf;
+	/* color: #0032c1; */
+	background-color: #244ebf;
 	position:relative;
 	margin-bottom:15px;
 }
