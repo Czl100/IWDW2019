@@ -33,6 +33,7 @@ $(document).ready(function(){
                 <li class="registration">\
                     <a  href="regist.html"><span>Registration</span></a>\
                 </li>\
+                <li style="display:inline-block;width:100%;height:0"></li>\
             </ul>\
         </div>';
 
@@ -56,12 +57,11 @@ $(document).ready(function(){
     var sponsors='<div id="bottom">\
         <hr width="100%" noshade id="line-gray"/>\
         <div id="sponsor">\
-            <table><tbody>\
-                <tr>\
-                    <td><a href="https://www.springer.com/gp"><img src="images/springer.png"/></a></td>\
-                    <td><a href="http://www.scu.edu.cn/"><img src="images/scu.png" /></a></td>\
-                </tr>\
-            </tbody></table>\
+            <ul>\
+                <li><a href="https://www.springer.com/gp"><img src="images/springer.png"/></a></li>\
+                <li><a href="http://www.scu.edu.cn/"><img src="images/scu.png" /></a></li>\
+                <li style="display:inline-block;width:100%;height:0"></li>\
+            </ul>\
         </div>\
         </div>';        
 
