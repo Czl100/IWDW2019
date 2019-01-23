@@ -3,21 +3,13 @@ $(document).ready(function(){
     var navbox='<div class="nav" id="smoothmenu1">\
             <ul class="clearfix">\
                 <li class="selected home"><a href="index.html"><span>Home</span></a></li>\
-                <li class="cfp">\
-                    <a  href="callPaper.html"><span>Call for Papers</span></a>\
-                    <ul class="submenu">\
-                        <li><a href="callPaper.html">Call for papers</a></li>\
-                        <li><a href="submission.html">Submission of papers</a></li>\
-                        <li><a href="paperRe.html">Paper Review</a></li>\
-                    </ul>\
-                </li>\
                 <li class="committee">\
                     <a  href="Committee.html"><span>Program Commitee</span></a></li>\
                 <li class="keynote">\
                     <a  href="keynote.html"><span>Invited Speakers</span></a></li>\
                 <li class="submission">\
-                    <a  href="submission.html"><span>Submission</span></a></li>\
-                <li class="paper-list">\
+                    <a  href="callPaper.html"><span>Submission</span></a></li>\
+                <li class="navpaperlist">\
                     <a  href="#"><span>List of Accepted Papers</span></a></li>\
                 <li class="registration">\
                     <a  href="regist.html"><span>Registration</span></a></li>\
@@ -33,6 +25,15 @@ $(document).ready(function(){
             </ul>\
         </div>';
 /*
+    <li class="cfp">\
+        <a  href="callPaper.html"><span>Call for Papers</span></a>\
+        <ul class="submenu">\
+            <li><a href="callPaper.html">Call for papers</a></li>\
+            <li><a href="submission.html">Submission of papers</a></li>\
+            <li><a href="paperRe.html">Paper Review</a></li>\
+        </ul>\
+    </li>\
+
     <li class="program">\
         <a  href="#"><span>Program</span></a>\
         <ul class="submenu">\
@@ -120,5 +121,22 @@ $(document).ready(function(){
         $('.clearfix').children('.navprework').addClass('selected');
         $(".content-home").html(prework);
         //console.log('sdadafa');        
+    });
+
+    // papers 改用Vue实现
+    var papers=
+    '<div class="textbox papers">\
+        <h2>List of Accepted Papers</h2>\
+        <hr width="100%" noshade id="line"/>\
+        <ul>\
+            <li>*********</li>\
+            <li>*********</li>\
+            <li>*********</li>\
+        </ul>\
+    </div>';
+    $(".navpaperlist").click(function(){
+        $('.clearfix').children('.selected').removeClass('selected');
+        $('.clearfix').children('.navpaperlist').addClass('selected');
+        $(".content-home").html(papers);
     });
 });

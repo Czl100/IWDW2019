@@ -559,6 +559,10 @@ div.nav ul li a span {
 
 
 
-ul.prework li{
+ul.prework li {
 	padding-bottom: 1em;
+}
+div.papers li{
+	list-style-type: decimal;
+	padding-bottom: 1em;	
 }
