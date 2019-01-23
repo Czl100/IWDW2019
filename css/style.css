@@ -5,10 +5,9 @@ html,body {
 	border: 0;
 	padding: 0;
 	margin: 0;
-	position: relative;	
-	
+	position: relative;
 	font-family: Tahoma,Geneva,sans-serif;
-	font-size: 14px;	
+	font-size: 14px;
 	color:#333;
 	background: #fff;
 	display: block;
@@ -64,8 +63,13 @@ p {
 	display:inline;	
 }
 
+.content-home {
+	display:table-cell; 
+	vertical-align: top;
+}
+
 .textbox {
-	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 
@@ -115,20 +119,33 @@ a:hover{
 	background: #6483d8;
 }
 .navbox{
+	display:table-cell;
+	vertical-align: top;
+	position:relative;
+	background: #FFF;
+	width:22%;
 	height:49px;
 	background-position:0 -138px;
 	background-repeat:repeat-x;
-	position:relative;
+	
 	z-index:99;
-	list-style-type:none;
+	list-style-type:none;	
+}
+
+#table-row {
+	display:table-row;
+}
+#table{
+	display: table;
+	width: 100%;
 }
 .nav{
-	width:960px;
+	/* width:960px; */
 	margin:0 auto;
-	text-align: justify;
+	/* text-align: justify; */
 }
 .nav li{
-	display: inline-block;
+	/*display: inline-block;*/
 	/*float:left;*/
 	height:49px;
 	background-position:100% -99px;
@@ -153,10 +170,10 @@ a:hover{
 	line-height:49px;
 	font-size:16px;
 	color:#fff;
-	font-weight:800;
+	font-weight: 500;
 	cursor:pointer;
 	width:119px;
-	text-align:center;
+	text-align:left;
 }
 .nav li.selected a,
 .nav li a.selected{
@@ -221,11 +238,11 @@ a:hover{
 
 
 .body-wrapper *{
-	background-color: #fbfbfb;
+	/* background-color: #fbfbfb; */
 }
 
 .theme-title{
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 	width:960px;
 	height:300px;	
 	cursor: pointer;
@@ -502,7 +519,7 @@ a {
 .nav ul li,
 .nav ul li a,
 .nav ul li a span {
-	width: 145px;
+	width: 100%;
 }
 
 nav li .submenu,
@@ -513,4 +530,35 @@ nav li .submenu li{
 	/*display: inline-block;*/
 	text-align: center;
 	width: 100%;
+}
+
+.submenu{
+	display: none;
+}
+
+/*导航栏里的<a>设置display:block*/
+
+div.nav {
+	float: left;	/*不能继承*/
+	margin-right: 5%;		
+	width: 90%;
+	background: #6483d8;
+}
+div.nav * {
+	width: 100%;	/*不能继承*/
+}
+
+
+div.nav ul li a{	
+	display: block;		
+}
+
+div.nav ul li a span {
+	padding-left: 2%;
+}
+
+
+
+ul.prework li{
+	padding-bottom: 1em;
 }
