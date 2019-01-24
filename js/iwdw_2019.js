@@ -4,7 +4,7 @@ $(document).ready(function(){
             <ul class="clearfix">\
                 <li class="selected home"><a href="index.html"><span>Home</span></a></li>\
                 <li class="committee">\
-                    <a  href="Committee.html"><span>Program Commitee</span></a></li>\
+                    <a  href="Committee.html"><span>Program Committee</span></a></li>\
                 <li class="keynote">\
                     <a  href="keynote.html"><span>Invited Speakers</span></a></li>\
                 <li class="submission">\
@@ -55,21 +55,20 @@ $(document).ready(function(){
 
 
     //<!--图像集-->
-    var theme_title='<div class="logo">\
-            <a href="index.html"><img src="images/qcs.jpg" alt="IWDW2019"/></a>\
+    var theme_title='<div><a><img src="images/headimg.png"></a></div>\
+    <div class="logo"><a href="index.html"><img src="images/qcs2.jpg" alt="IWDW2019"/></a></div>\
+    <div class="slider">\
+        <div class="conbox">\
+            <div><img src="images/1.jpg"/></div>\
+            <div><img src="images/2.jpg" /></div>\
+            <div><img src="images/xm.jpg" /></div>\
         </div>\
-        <div class="slider">\
-            <div class="conbox">\
-                <div><img src="images/1.jpg"/></div>\
-                <div><img src="images/2.jpg" /></div>\
-                <div><img src="images/xm.jpg" /></div>\
-            </div>\
-            <div class="switcher">\
-                <a href="#" class="cur">1</a>\
-                <a href="#">2</a>\
-                <a href="#">3</a>\
-            </div>\
-        </div>';
+        <div class="switcher">\
+            <a href="#" class="cur">1</a>\
+            <a href="#">2</a>\
+            <a href="#">3</a>\
+        </div>\
+    </div>';
 
     var sponsors='<div id="bottom">\
         <hr width="100%" noshade id="line-gray"/>\
