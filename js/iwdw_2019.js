@@ -55,7 +55,7 @@ $(document).ready(function(){
 
 
     //<!--图像集-->
-    var theme_title='<div><a><img src="images/headimg.png"></a></div>\
+    var theme_title='<div><img src="images/headimg.png"></div>\
     <div class="logo"><a href="index.html"><img src="images/qcs2.jpg" alt="IWDW2019"/></a></div>\
     <div class="slider">\
         <div class="conbox">\
