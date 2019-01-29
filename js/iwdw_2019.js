@@ -9,6 +9,8 @@ $(document).ready(function(){
                     <a  href="keynote.html"><span>Invited Speakers</span></a></li>\
                 <li class="submission">\
                     <a  href="callPaper.html"><span>Submission</span></a></li>\
+                <li class="navspecial-sessions">\
+                    <a  href="#"><span>Special Sessions</span></a></li>\
                 <li class="navpaperlist">\
                     <a  href="#"><span>List of Accepted Papers</span></a></li>\
                 <li class="registration">\
@@ -55,7 +57,7 @@ $(document).ready(function(){
 
 
     //<!--图像集-->
-    var theme_title='<div><img src="images/headimg.png"></div>\
+    var theme_title='<div><a href="index.html"><img src="images/headimg.png"></a></div>\
     <div class="logo"><a href="index.html"><img src="images/qcs2.jpg" alt="IWDW2019"/></a></div>\
     <div class="slider">\
         <div class="conbox">\
@@ -69,6 +71,15 @@ $(document).ready(function(){
             <a href="#">3</a>\
         </div>\
     </div>';
+
+    var special_sessions='<div class="textbox">\
+        <h2>Special Sessions</h2>\
+        <hr width="100%" noshade id="line"/>\
+        <div class="text indentation">\
+            <p>Special session proposals are invited to IWDW 2019, and inquiries regarding your submission should be directed to the General Chair.\
+                The proposal needs to be submitted to the General Chair (Hongxia Wang, <a>hxwang@scu.edu.cn</a>) by 15 August, 2019.</p>\
+        </div>\
+        </div>';
 
     var sponsors='<div id="bottom">\
         <hr width="100%" noshade id="line-gray"/>\
@@ -113,13 +124,20 @@ $(document).ready(function(){
 
     //删除子菜单
     $(".clearfix li ul").remove();
+    
 
-    //添加previous Work
+    //添加 Special Sessions
+    $(".navspecial-sessions").click(function(){
+        $('.clearfix').children('.selected').removeClass('selected');
+        $('.clearfix').children('.navspecial-sessions').addClass('selected');
+        $(".content-home").html(special_sessions);
+    });
+
+    //添加 previous Work
     $(".navprework").click(function(){
         $('.clearfix').children('.selected').removeClass('selected');
         $('.clearfix').children('.navprework').addClass('selected');
         $(".content-home").html(prework);
-        //console.log('sdadafa');        
     });
 
     // papers 改用Vue实现

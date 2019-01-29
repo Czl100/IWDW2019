@@ -38,7 +38,7 @@ p {
 .body-wrapper{
 	width:960px; 
 	height:auto; 
-	margin:auto;
+	margin:auto;	
 }
 
 .text{
@@ -567,4 +567,8 @@ ul.prework li {
 div.papers li{
 	list-style-type: decimal;
 	padding-bottom: 1em;	
+}
+
+.nodot li{
+	list-style-type: none;
 }
